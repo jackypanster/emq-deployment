@@ -1,4 +1,4 @@
-### emqtted-setup
+### EMQ setup
 
 #### Build Docker Image
 ```bash
