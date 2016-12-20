@@ -11,5 +11,5 @@ cd emq_docker && sudo docker build -t emq:latest .
 ```
 + Run the image
 ```bash
-sudo docker run --restart=always -itd -e "EMQ_TCP_PORT=1883" -p 18083:18083 -p 1883:1883 --name emq emq:latest
+sudo docker run --restart=always -itd -e "EMQ_TCP_PORT=1883" -p 18083:18083 -p 80:1883 --name emq emq:latest
 ```
