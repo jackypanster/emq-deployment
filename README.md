@@ -29,3 +29,9 @@ cd _rel/emqttd && ./bin/emqttd console
 ```bash
 ./bin/emqttd_ctl cluster join emqttd@<IP>
 ```
++ Verify
+
+```bash
+mosquitto_sub -h <IP_1> -p 80 -d -t 'test/topic' 
+mosquitto_pub -h <IP_2> -p 80 -d -t 'test/topic' -m 'hello'
+```
