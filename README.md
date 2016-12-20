@@ -13,3 +13,10 @@ cd emq_docker && sudo docker build -t emq:latest .
 ```bash
 sudo docker run --restart=always -itd -e "EMQ_TCP_PORT=1883" -p 18083:18083 -p 80:1883 --name emq emq:latest
 ```
+
++ Or build from source code
+```bash
+git clone https://github.com/emqtt/emq-relx.git
+cd emq-relx && make
+cd _rel/emqttd && ./bin/emqttd console
+```
